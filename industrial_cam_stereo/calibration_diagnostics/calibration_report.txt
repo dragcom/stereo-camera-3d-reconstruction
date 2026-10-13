@@ -1,0 +1,38 @@
+
+========== STEREO CALIBRATION DIAGNOSTICS ==========
+Usable stereo pairs: 48; image size: 1280 x 720
+
+INTRINSICS / REPROJECTION
+Left: RMS=0.411 px [GOOD]
+  focal=(654.1, 655.6) px, principal point=(629.0, 373.9)
+  distortion=[ 0.19375 -0.30184  0.00273  0.00569  0.15323]
+  factory cross-check: spec predicts fx ~ 602 px at this resolution; calibrated/spec = 1.09 [OK]
+Right: RMS=0.408 px [GOOD]
+  focal=(646.8, 647.7) px, principal point=(608.3, 364.5)
+  distortion=[ 0.18681 -0.27231  0.00205  0.00286  0.13112]
+  factory cross-check: spec predicts fx ~ 602 px at this resolution; calibrated/spec = 1.07 [OK]
+  Target: below 0.7 px. Above 1.0 px is unsuitable for metric depth.
+  Factory focal is a NOMINAL value: within +/-15% of spec is normal for a cheap module.
+
+CAPTURE COVERAGE / DIVERSITY
+Board centre spread: x=8.6%, y=4.5% of frame
+Board area: median=8.5%, range=5.2%..17.5%
+  WARNING: insufficient frame coverage. Add board poses at every edge and corner.
+
+RELATIVE POSE / RECTIFICATION
+Estimated baseline: 65.57 mm; T=[-6.55e+01  2.44e-02 -2.07e+00] mm
+Measured baseline: 65.00 mm; difference=+0.57 mm (0.9%)
+Per-pair pose consistency: rotation median/p95=0.306/0.831 deg
+Per-pair pose consistency: translation median/p95=1.990/6.183 mm
+Rectified vertical error: median/p95/max=0.097/0.302/0.547 px
+  WARNING: pose changes across captures. Suspect blurred corners, unsynchronised images, or outlier pairs.
+
+PER-PAIR OUTLIERS
+Outlier threshold: max(left/right RMS) > 1.000 px
+  No reprojection outliers under this threshold.
+
+NEXT CAPTURE
+1. Lock focus, exposure, gain, white balance, and resolution before collecting images.
+2. Capture 25-40 synchronized pairs: centred, near edges/corners, tilted in both axes, at 2-3 distances.
+3. Keep the full board sharp; avoid glare, motion blur, cropped boards, and repeated fronto-parallel views.
+4. Recalibrate after removing outliers; require both camera RMS < 0.7 px and rectified-y p95 < 1.0 px.
