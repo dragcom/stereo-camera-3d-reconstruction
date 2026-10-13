@@ -1,4 +1,4 @@
-# Stereo Vision 3D Reconstruction and Point-Cloud Merging
+# Stereo Camera 3D Reconstruction
 
 Stereo vision enables three-dimensional scene reconstruction by estimating depth from corresponding points in two images. This project aims to implement a stereo vision pipeline and investigate factors affecting reconstruction quality, including camera calibration, stereo matching, and scene conditions. 
 Two stereo setups are implemented and trialed: a dedicated binocular stereo camera, and a single phone camera setup.
