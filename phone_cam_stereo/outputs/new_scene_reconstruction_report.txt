@@ -1,0 +1,16 @@
+
+========== RECONSTRUCTION EVALUATION ==========
+Image: new_scene; size: 2048 x 1152
+
+MATCHING COVERAGE
+Positive-disparity coverage: 20.6% [FAIL]
+Physically filtered depth coverage (0.1-10 m): 20.5%
+Disparity px: median/p05/p95=91.19/49.12/179.00
+
+LEFT-RIGHT CONSISTENCY
+Consistent matches (<= 1 px disagreement): 0.1% [FAIL]
+Left-right disagreement px: median/p95=150.25/203.19
+  FAIL: matching is unstable. Recheck calibration/rectification, image synchronisation, texture, and SGBM settings.
+
+DEPTH DISTRIBUTION
+Depth m: median/p05/p95=0.457/0.233/0.797
