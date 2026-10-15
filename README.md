@@ -3,6 +3,8 @@
 Stereo vision enables three-dimensional scene reconstruction by estimating depth from corresponding points in two images. This project aims to implement a stereo vision pipeline and investigate factors affecting reconstruction quality, including camera calibration, stereo matching, and scene conditions. 
 Two stereo setups are implemented and trialed: a dedicated binocular stereo camera, and a single phone camera setup.
 
+[🔗 Watch the Demo Video](https://drive.google.com/file/d/1GqjJH8w9v5EVVMiY2xkU5oIric4zAyOC/view?usp=sharing)
+
 ## Theory of Stereo Camera Reconstruction
 
 ### Calibration
